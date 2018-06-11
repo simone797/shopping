@@ -13,4 +13,10 @@ public class Hello {
 
         return "Ciao!";
     }
+
+    @RequestMapping(value = "/private", method = RequestMethod.GET)
+    public String privateController() {
+
+        return "Private!";
+    }
 }
